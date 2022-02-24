@@ -1,0 +1,25 @@
+@import "../../../styles";
+
+.header-desktop {
+  &__container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: $header--height;
+  }
+
+  &__menu {
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    font-size: 14px;
+
+    li {
+      padding: 10px 72px;
+      font-style: italic;
+      cursor: pointer;
+    }
+  }
+}

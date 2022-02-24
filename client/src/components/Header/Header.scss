@@ -1,0 +1,16 @@
+.header__desktop {
+  position: sticky;
+  display: inherit;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.header__mobile {
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: inherit;
+  }
+}
