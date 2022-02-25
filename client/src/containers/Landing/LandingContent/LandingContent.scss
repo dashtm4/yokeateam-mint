@@ -1,0 +1,55 @@
+@import ".../../../../../styles";
+
+.landing-content {
+  padding-top: 280px;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    text-align: center;
+    color: $color--green-900;
+    font-size: 60px;
+    font-style: italic;
+  }
+
+  &__description {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 500px;
+    text-align: center;
+    color: $color--black;
+    transform: translate(-50%, 0);
+  }
+
+  &__bg {
+    position: absolute;
+    left: -40px;
+    top: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .landing-content {
+    &__wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__bg {
+      position: relative;
+      align-self: start;
+    }
+
+    &__description {
+      position: relative;
+      transform: none;
+      left: 0;
+    }
+  }
+}
